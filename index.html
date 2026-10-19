@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <div class="Calculator">
+        <div id="Input"></div>
+        <div id="Answer"></div>
+          <div class="Buttons">
+              <div class="numbers" onclick="give1()">1</div>
+              <div class="numbers" onclick="give2()">2</div>
+              <div class="numbers" onclick="give3()">3</div>
+              <div class="numbers" onclick="give4()">4</div>
+              <div class="numbers" onclick="give5()">5</div>
+              <div class="numbers" onclick="give6()">6</div>
+              <div class="numbers" onclick="give7()">7</div>
+              <div class="numbers" onclick="give8()">8</div>
+              <div class="numbers" onclick="give9()">9</div>
+              <div class="numbers" onclick="give1()">0</div>
+              <div class="numbers" onclick="giveDot()">.</div>
+          </div>
+          <div class="Opperators">
+              <div id="+" onclick="giveAddition()">+</div>
+              <div id="-" onclick="giveMinus()">-</div>
+              <div id="*" onclick="giveMuiltiplicatio()">*</div>
+              <div id="/" onclick="giveDivision()">/</div>
+              <div id="%" onclick="giveModule()">%</div>
+              <div id="(" onclick="giveOpenParenthesis()">(</div>
+              <div id=")" onclick="giveClosingParenthesis()">)</div>
+              <div id="**" onclick="givePower()">**</div>
+          </div>
+          <div class="history">
+
+              <div id="PreviousHostory" onclick="givePreviouslyWritten()">↑</div>
+              <div id="DownHistory" onclick="giveDownHistory()">↓</div>
+          </div>
+          <div class="evaluation">
+              <div id="Evaluate" onclick="giveEvaluatiom()">=</div>
+              <div id="Reset" onclick="giveReset()">Reset</div>
+          </div>
+      </div>
+</body>
+</html>
