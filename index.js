@@ -21,7 +21,7 @@ function giveEvaluation(){
 
     let answer=eval(currentInput);
     currentOutput+=answer;
-    document.getElementById("Answer").innerText=currentOutput;
+    document.getElementById("Answe").innerText=currentOutput;
 
 }
 
