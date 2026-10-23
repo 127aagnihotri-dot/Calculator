@@ -7,7 +7,7 @@ function give(val){
     document.getElementById("Input").value=currentInput;
 }
 
-function giveClear(){
+function giveClar(){
     currentInput="";
     currentOutput="";
     document.getElementById("Input").value=currentInput;

@@ -24,7 +24,7 @@ body{
     align-items: center;
     grid-column-start:span 5;
     grid-row:span 5;
-    border:3px solid red;
+    borde:3px solid red;
 
 }
 
