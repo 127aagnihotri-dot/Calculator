@@ -1,0 +1,58 @@
+body{
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    padding-top:30px;
+
+
+
+}
+.Calculator {
+    Background: gray;
+        border: 7px solid black;
+    padding:15px;
+    width: 500px;
+    justify-content: center;
+}
+.Numbers{
+    background-color: lightgray;
+    color:black;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap:12px;
+    cursor:pointer;
+    align-items: center;
+    grid-column-start:span 5;
+    grid-row:span 5;
+    border:3px solid red;
+
+}
+
+.DisplayShawty{
+    background-color: lightgray;
+    border: 3px solid red;
+    height:70px;
+    margin-bottom:15px;
+    padding:5px 10px;
+    display:flex;
+    justify-content: space-between;
+    font-size:20px;
+}
+#Input{
+    height:25px;
+    color:black;
+}
+#Answer{
+    height:30px;
+    color:black;
+    font-weight:bold;
+    text-align:right;
+}
+
+
+.evaluation{
+    display:flex;
+    justify-content: right;
+    gap:10px;
+    margin-bottom:15px;
+}
