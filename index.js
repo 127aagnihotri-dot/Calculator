@@ -4,14 +4,14 @@ let currentInput="";
 let currentOutput="";
 function give(val){
     currentInput += val;
-    document.getElementById("Input").value=currentInput;
+    document.getElementById("Input").innerText=currentInput;
 }
 
 function giveClar(){
     currentInput="";
     currentOutput="";
-    document.getElementById("Input").value=currentInput;
-    document.getElementById("Answer").value=currentOutput;
+    document.getElementById("Input").innerText=currentInput;
+    document.getElementById("Answer").innerText=currentOutput;
 
 }
 function giveEvaluation(){
@@ -21,7 +21,7 @@ function giveEvaluation(){
 
     let answer=eval(currentInput);
     currentAnswer=answer;
-    document.getElementById("Answer").value=currentAnswer;
+    document.getElementById("Answer").innerText=currentAnswer;
 
 }
 
@@ -43,17 +43,17 @@ function givePrevious(){
 
 function giveCurrent(){
     currentOutput;
-    document.getElementById("Input").value=currentOutput;
-    document.getElementById("Answer").value=currentOutput;
+    document.getElementById("Input").innerText=currentOutput;
+    document.getElementById("Answer").innerText=currentOutput;
 }
 
 
-document.getEventListener("Keydown",function(e)){
-    if('01234567890'.includes(e.keyCode)|| e.keyCode === '+'||e.keyCode === '-'||e.keyCode === '*'||e.keyCode === '/'||e.keyCode === '**'||e.keyCode === '('||e.keyCode === ')'||e.keyCode === '.'){
-        give(val);
-    }
-    if('Enter'.includes(e.keyCode)||e.keyCode === '-'){
-
-    }
-}
+// document.getEventListener("Keydown",function(e)){
+//     if('01234567890'.includes(e.keyCode)|| e.keyCode === '+'||e.keyCode === '-'||e.keyCode === '*'||e.keyCode === '/'||e.keyCode === '**'||e.keyCode === '('||e.keyCode === ')'||e.keyCode === '.'){
+//         give(val);
+//     }
+//     if('Enter'.includes(e.keyCode)||e.keyCode === '-'){
+//
+//     }
+// }
 

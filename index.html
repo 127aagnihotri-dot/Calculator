@@ -1,53 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="index.js"></script>
     <meta char  set="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
       <div class="Calculator">
-          <div class="DisplayShawty">
-              <input id="Iput">Input</input>
-              <input id="Answer">Answer</input>
+          <div class="header-row">
+              <div class="DisplayShawty">
+                  <input id="InputDisplay">Input</input>
+                  <input id="AnswerDisplay">Answer</input>
+              </div>
+              <div class="top-controls">
+                  <button class="button=" onclick="giveEvaluation()">=</button>
+                  <button class="buttonclear" onclick="giveClear()">Reset</button>
+              </div>
           </div>
 
-          <div class="Top Row">
-              <button class="button" onclick="give('1')">1</button>
-              <button class="button" onclick="give('2')">2</button>
-              <button class="button" onclick="give('3')">3</button>
+          <div class="numpad">
+              <div class="Top-Row">
+                  <button class="button1" onclick="give('1')">1</button>
+                  <button class="button2" onclick="give('2')">2</button>
+                  <button class="button3" onclick="give('3')">3</button>
+              </div>
+              <div class="Second-row">
+                  <button class="button4" onclick="give('4')">4</button>
+                  <button class="button5" onclick="give('5')">5</button>
+                  <button class="button6" onclick="give('6')">6</button>
+              </div>
+              <div class="bottom-row">
+                  <button class="button7" onclick="give('7')">7</button>
+                  <button class="button8" onclick="give('8')">8</button>
+                  <button class="button9" onclick="give('9')">9</button>
+              </div >
+              <div class="bottom-bottom-row">
+                  <button class="button0" onclick="give('0')">0</button>
+                  <button class="button." onclick="give('.')">.</button>
+              </div>
+              <div class="Operators">
+                  <div class="row">
+                      <button class="button+" onclick="give('+')">+</button>
+                      <button class="button-" onclick="give('-')">-</button>
+                      <button class="button*" onclick="give('*')">*</button>
+                  </div>
+                  <div class="row">
+                      <button class="button/" onclick="give('/')">/</button>
+                      <button class="button(" onclick="give('(')">(</button>
+                      <button class="button)" onclick="give(')')">)</button>
+                  </div>
+
+                  <div class="row row-centered">
+                      <button class="button%" onclick="give('%')">%</button>
+                      <button class="button**" onclick="give('**')">**</button>
+
+                  </div>
+
+              </div>
+              <div class="navigate">
+                  <button class="buttonPrevious" onclick="givePrevious()">Previous</button>
+                  <button class="buttonCurrent" onclick="giveCurrent()">CurrentShawty</button>
+              </div>
+
           </div>
-          <div class="Second row">
-              <button class="button" onclick="give('4')">4</button>
-              <button class="button" onclick="give('5')">5</button>
-              <button class="button" onclick="give('6')">6</button>
-          </div>
-          <div class="bottom row">
-              <button class="button" onclick="give('7')">7</button>
-              <button class="button" onclick="give('8')">8</button>
-              <button class="button" onclick="give('9')">9</button>
-          </div >
-          <div>
-              <button class="button" onclick="give('0')">0</button>
-              <button class="button" onclick="give('.')">.</button>
-          </div>
-          <div class="Operators">
-              <button class="button" onclick="give('+')">+</button>
-              <button class="button" onclick="give('-')">-</button>
-              <button class="button" onclick="give('*')">*</button>
-              <button class="button" onclick="give('/')">/</button>
-              <button class="button" onclick="give('%')">%</button>
-              <button class="button" onclick="give('(')">(</button>
-              <button class="button" onclick="give(')')">)</button>
-              <button class="button" onclick="give('**')">**</button>
-          </div>
-          <div class="history">
-              <button class="button" onclick="givePrevious()">Previous</button>
-              <button class="button" onclick="giveCurrent()">CurrentShawty</button>
-          </div>
-          <div class="evaluation">
-              <button class="button" onclick="giveEvaluation()">=</button>
-              <button class="button" onclick="giveClear()">Reset</button>
-          </div>
+
       </div>
 </body>
 </html>
