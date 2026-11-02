@@ -1,17 +1,17 @@
 console.log('Happy developing ✨')
 
-let currentInput="";
-let currentOutput="";
+let currentInput;
+let currentOutput;
 function give(val){
     currentInput += val;
-    document.getElementById("Input").innerText=currentInput;
+    document.getElementById("InputDisplay").value=currentInput;
 }
 
-function giveClar(){
+function giveClear(){
     currentInput="";
     currentOutput="";
-    document.getElementById("Input").innerText=currentInput;
-    document.getElementById("Answer").innerText=currentOutput;
+    document.getElementById("Input").value=currentInput;
+    document.getElementById("Answer").value=currentOutput;
 
 }
 function giveEvaluation(){
@@ -21,7 +21,7 @@ function giveEvaluation(){
 
     let answer=eval(currentInput);
     currentAnswer=answer;
-    document.getElementById("Answer").innerText=currentAnswer;
+    document.getElementById("Answer").value=currentAnswer;
 
 }
 
@@ -43,8 +43,8 @@ function givePrevious(){
 
 function giveCurrent(){
     currentOutput;
-    document.getElementById("Input").innerText=currentOutput;
-    document.getElementById("Answer").innerText=currentOutput;
+    document.getElementById("Input").value=currentOutput;
+    document.getElementById("Answer").value=currentOutput;
 }
 
 
