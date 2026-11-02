@@ -10,7 +10,7 @@ function give(val){
 function giveClar(){
     currentInput="";
     currentOutput="";
-    document.getElementById("Input").innerText=currentInput;
+    document.getElementById("Input").value=currentInput;
     document.getElementById("Answer").innerText=currentOutput;
 
 }
