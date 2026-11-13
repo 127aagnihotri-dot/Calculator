@@ -1,10 +1,8 @@
-console.log('Happy developing ✨')
 
-let currentInput;
 let currentOutput;
 function give(val){
-    currentInput += val;
-    document.getElementById("InputDisplay").value=currentInput;
+
+    document.getElementById("InputDisplay").value+=val;
 }
 
 function giveClear(){
@@ -15,13 +13,20 @@ function giveClear(){
 
 }
 function giveEvaluation(){
-    if(currentInput === ""){
-        return ;
+    const inputBox=document.getElementById("InputDisplay");
+    const answerBox=document.getElementById("AnswerDisplay");
+    const rawValue=inputBox.value;
+
+    if(rawValue===""){
+
+        return;
     }
 
-    let answer=eval(currentInput);
-    currentAnswer=answer;
-    document.getElementById("Answer").value=currentAnswer;
+    let result=eval(rawValue);
+    answerBox.innerHTML=result;
+
+
+
 
 }
 
@@ -48,12 +53,4 @@ function giveCurrent(){
 }
 
 
-// document.getEventListener("Keydown",function(e)){
-//     if('01234567890'.includes(e.keyCode)|| e.keyCode === '+'||e.keyCode === '-'||e.keyCode === '*'||e.keyCode === '/'||e.keyCode === '**'||e.keyCode === '('||e.keyCode === ')'||e.keyCode === '.'){
-//         give(val);
-//     }
-//     if('Enter'.includes(e.keyCode)||e.keyCode === '-'){
-//
-//     }
-// }
 
