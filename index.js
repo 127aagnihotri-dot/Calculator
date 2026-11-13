@@ -33,13 +33,13 @@ function giveEvaluation(){
 function givePrevious(){
     //first get the previously written code
     currentOutput;
-    const stored =sessionStorage.getItem("Input");
+    const stored =sessionStorage.getItem("InputDisplay");
     if(stored){
         equations =JSON.parse(stored);
     }
     else{
-        equations= [];
-        sessionStorage.setItem("Input",JSON.stringify(currentInput));
+        equations=[];
+        sessionStorage.setItem("InputDisplay",JSON.stringify(currentInput));
     }
 
 
